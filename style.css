@@ -1,0 +1,124 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.logo {
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 20px;
+  position: relative;
+  left: 150px;
+  width: 168px;
+  height: 65px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  flex-basis: 80%;
+}
+li {
+  list-style: none;
+  margin: 20px 30px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: #707070;
+  font-size: 16px;
+  transition: 0.2s all;
+  opacity: 0.8;
+}
+
+.navbar-link:hover {
+  opacity: 1;
+  color: #444444;
+}
+.contact-btn {
+  width: 148px;
+  border-radius: 20px;
+  background-color: #9bf2b5;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  color: #198138;
+  font-size: 16px;
+  transition: 0.2s all;
+  position: relative;
+  top: 3px;
+}
+.contact-btn:hover {
+  background-color: white;
+  transform: translate(-5px, -5px);
+  border: 1px solid #9bf2b5;
+  box-shadow: 5px 5px 0 #9bf2b5;
+}
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("background.png");
+  background-size: 100% 94.4%;
+  background-position: right 50px;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  background-repeat: no-repeat;
+  background-color: #fbfbfb;
+}
+.timer-box {
+  width: 724px;
+  height: 724px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("circle.png");
+  flex-direction: column;
+  text-align: center;
+  animation: 3s spin infinite linear;
+}
+.text-box {
+  animation: 3s spin infinite linear reverse;
+}
+.text {
+  font-size: 70px;
+  color: #444444;
+}
+.time {
+  color: #84e2a0;
+  font-size: 70px;
+  padding-top: 30px;
+}
