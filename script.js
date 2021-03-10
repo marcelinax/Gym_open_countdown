@@ -4,7 +4,7 @@ const remainingTimeEl = document.querySelector(".time");
 const text = document.querySelector(".text");
 
 const calcTime = () => {
-  const openDate = new Date(2021, 2, 12, 9);
+  const openDate = new Date(2021, 8, 10, 14);
   const now = Date.now();
 
   const dif = openDate - now;
