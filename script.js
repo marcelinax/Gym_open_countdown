@@ -1,5 +1,4 @@
 "use strict";
-
 const remainingTimeEl = document.querySelector(".time");
 const text = document.querySelector(".text");
 
